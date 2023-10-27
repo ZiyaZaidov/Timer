@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TaskTypeCollectionViewCell" customModule="Timer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Oi-Lm-Uqi">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80a-xw-mVr">
+                                <rect key="frame" x="21" y="0.0" width="78" height="78"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gamecontroller" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YEs-45-KsO">
+                                        <rect key="frame" x="12.333333333333332" y="22.333333333333332" width="53.333333333333343" height="33.666666666666671"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="large"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YEs-45-KsO" firstAttribute="centerY" secondItem="80a-xw-mVr" secondAttribute="centerY" id="2s3-kc-qXu"/>
+                                    <constraint firstItem="YEs-45-KsO" firstAttribute="centerX" secondItem="80a-xw-mVr" secondAttribute="centerX" id="Xj0-gX-Spg"/>
+                                    <constraint firstAttribute="width" secondItem="80a-xw-mVr" secondAttribute="height" multiplier="1:1" id="cd5-3R-TiN"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZO5-TA-ovo">
+                                <rect key="frame" x="38.333333333333343" y="98.333333333333329" width="43.666666666666657" height="21.666666666666671"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZO5-TA-ovo" secondAttribute="bottom" id="283-wv-44w"/>
+                            <constraint firstItem="80a-xw-mVr" firstAttribute="top" secondItem="0Oi-Lm-Uqi" secondAttribute="top" id="APm-sr-304"/>
+                            <constraint firstItem="ZO5-TA-ovo" firstAttribute="centerX" secondItem="0Oi-Lm-Uqi" secondAttribute="centerX" id="X6C-b2-SJg"/>
+                            <constraint firstItem="80a-xw-mVr" firstAttribute="height" secondItem="0Oi-Lm-Uqi" secondAttribute="height" multiplier="0.65" id="cMn-NB-QFM"/>
+                            <constraint firstItem="80a-xw-mVr" firstAttribute="centerX" secondItem="0Oi-Lm-Uqi" secondAttribute="centerX" id="uSQ-MQ-d10"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0Oi-Lm-Uqi" secondAttribute="trailing" id="10z-ev-46h"/>
+                <constraint firstAttribute="bottom" secondItem="0Oi-Lm-Uqi" secondAttribute="bottom" id="RIN-jv-YUO"/>
+                <constraint firstItem="0Oi-Lm-Uqi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WkI-wp-72g"/>
+                <constraint firstItem="0Oi-Lm-Uqi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yzd-zO-2JO"/>
+            </constraints>
+            <connections>
+                <outlet property="imageContainerView" destination="80a-xw-mVr" id="TUV-xh-78C"/>
+                <outlet property="imageView" destination="YEs-45-KsO" id="lB2-1S-eY5"/>
+                <outlet property="typeName" destination="ZO5-TA-ovo" id="1VM-6q-Hhq"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gamecontroller" catalog="system" width="128" height="79"/>
+    </resources>
+</document>
